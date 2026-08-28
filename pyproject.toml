@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lithosynth"
-version = "0.0.0"
+version = "0.1.0"
 description = "Synthetic scene, dataset, and diversity analysis tools for multi-rock research."
 readme = "README.md"
 requires-python = ">=3.11"
