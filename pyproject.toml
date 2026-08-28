@@ -8,7 +8,10 @@ version = "0.1.0"
 description = "Synthetic scene, dataset, and diversity analysis tools for multi-rock research."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+  "blenderproc==2.8.0",
+  "numpy>=1.24,<2",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -25,3 +28,6 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 120
 target-version = "py311"
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/generate_scene.py" = ["I001"]
