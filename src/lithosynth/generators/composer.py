@@ -1,0 +1,21 @@
+"""Composition of terrain, rock, and placement generators."""
+
+from __future__ import annotations
+
+from random import Random
+from typing import Any
+
+from lithosynth.core.spec import SceneSpec
+from lithosynth.generators.rock import generate_rocks
+from lithosynth.generators.terrain import generate_terrain
+
+
+def generate_scene(config: dict[str, Any]) -> SceneSpec:
+    """Generate a backend-neutral scene specification."""
+    seed_source = Random(config["seed"])
+    terrain_seed = seed_source.getrandbits(64)
+    rocks_seed = seed_source.getrandbits(64)
+
+    terrain = generate_terrain(config["terrain"], terrain_seed)
+    rocks = generate_rocks(config["rocks"], terrain, rocks_seed)
+    return SceneSpec(seed=config["seed"], terrain=terrain, rocks=rocks)
