@@ -13,7 +13,7 @@ LithoSynth 是面向岩石多样性研究的场景合成、数据生成与分析
 
 ## 项目状态
 
-项目处于 v0.1 开发阶段，已提供最小多岩石场景生成流程。当前方案见 [docs/plan/v0.1.md](docs/plan/v0.1.md)。
+项目处于 v0.1.0 开发阶段，已提供最小多岩石场景生成流程。当前方案见 [docs/plan/v0.1.0.md](docs/plan/v0.1.0.md)。
 
 ## 开发环境
 
@@ -50,6 +50,28 @@ blenderproc run scripts/generate_scene.py --output output/example --seed 11
 blenderproc vis hdf5 output/demo/0.hdf5
 ```
 
+在 Blender GUI 中构建和检查场景：
+
+```bash
+blenderproc debug scripts/generate_scene.py
+```
+
+Blender 打开后，在 Scripting 工作区点击 `Run BlenderProc`。入口脚本同时兼容普通运行和 GUI 调试模式。
+
+## 检查与可视化
+
+检查 HDF5 数据集、图像尺寸、相机分辨率以及实例与岩石元数据的一致性，并生成综合检查图：
+
+```bash
+python scripts/inspect_output.py output/demo
+```
+
+检查图默认写入 `output/demo/inspection.png`，包含 RGB、深度、实例标注以及岩石位置、尺寸、基础颜色和粗糙度。若当前环境支持图形界面，可同时打开窗口：
+
+```bash
+python scripts/inspect_output.py output/demo --show
+```
+
 ## 代码边界
 
 ```text
@@ -63,9 +85,6 @@ generators → core/spec.py: SceneSpec → backends → render outputs
 
 后续可参考或迁移已有合成项目中的地形、岩石和分布算法到 `generators/`，不将这些项目本身作为渲染后端。
 
-## 近期目标
+## v0.1.0 状态
 
-1. 建立 BlenderProc 运行骨架；
-2. 生成平坦地形与随机多岩石场景；
-3. 导出基础渲染结果和已知岩石属性；
-4. 加入基础检查与可视化。
+v0.1.0 已建立场景生成、渲染、数据导出、输出检查与可视化的最小闭环。详细验收结果见 [v0.1.0 计划](docs/plan/v0.1.0.md)。

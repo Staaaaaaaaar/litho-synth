@@ -5,7 +5,16 @@ import sys
 from pathlib import Path
 
 
-REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+def _find_repository_root() -> Path:
+    candidates = [Path(__file__).resolve().parent, Path.cwd()]
+    for starting_point in candidates:
+        for candidate in (starting_point, *starting_point.parents):
+            if (candidate / "pyproject.toml").is_file() and (candidate / "src" / "lithosynth").is_dir():
+                return candidate
+    raise RuntimeError("Could not locate the LithoSynth repository root")
+
+
+REPOSITORY_ROOT = _find_repository_root()
 sys.path.insert(0, str(REPOSITORY_ROOT / "src"))
 
 from lithosynth.backends.blenderproc import render_scene
