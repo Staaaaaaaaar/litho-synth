@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+
+# Generated data and Blender artifacts
+data/
+datasets/
+outputs/
+renders/
+*.blend1
+*.blend2
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
