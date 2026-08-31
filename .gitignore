@@ -29,3 +29,7 @@ renders/
 .idea/
 .vscode/
 .DS_Store
+
+# Asset pipeline caches and generated preparations
+/assets/cache/
+/assets/prepared/

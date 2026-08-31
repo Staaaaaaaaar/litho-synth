@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "asset_type": "hdri",
+  "assets": [
+    {
+      "provider": "polyhaven",
+      "asset_id": "goegap_road",
+      "type": "hdri",
+      "source_url": "https://polyhaven.com/a/goegap_road",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {
+        "container": "hdr",
+        "resolution": "2k",
+        "fallback_containers": ["exr"]
+      },
+      "real_scale": {
+        "unit": "dimensionless_environment",
+        "world_strength": 1.0,
+        "rotation_unit": "radian"
+      },
+      "texture_convention": {
+        "projection": "equirectangular",
+        "color_space": "Linear",
+        "dynamic_range": "scene_referred"
+      }
+    },
+    {
+      "provider": "ambientcg",
+      "asset_id": "DayEnvironmentHDRI050",
+      "type": "hdri",
+      "source_url": "https://ambientcg.com/get?file=DayEnvironmentHDRI050_2K-HDR.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://docs.ambientcg.com/license/",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {
+        "container": "zip",
+        "resolution": "2k",
+        "encoding": "HDR"
+      },
+      "real_scale": {
+        "unit": "dimensionless_environment",
+        "world_strength": 1.0,
+        "rotation_unit": "radian"
+      },
+      "texture_convention": {
+        "projection": "equirectangular",
+        "color_space": "Linear",
+        "dynamic_range": "scene_referred"
+      }
+    }
+  ]
+}

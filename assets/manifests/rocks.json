@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "asset_type": "rock",
+  "assets": [
+    {
+      "provider": "polyhaven",
+      "asset_id": "rock_09",
+      "type": "rock",
+      "source_url": "https://polyhaven.com/a/rock_09",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {
+        "container": "blend",
+        "resolution": "1k",
+        "fallback_containers": ["gltf", "fbx"]
+      },
+      "real_scale": {
+        "unit": "meter",
+        "source_unit_meters": 1.0,
+        "expected_longest_dimension_m": [0.1, 0.2],
+        "up_axis_after_import": "Z"
+      },
+      "geometry_convention": {
+        "forward_axis": "-Y",
+        "origin": "preserve_then_recenter_to_bounds",
+        "transforms": "apply_location_rotation_scale",
+        "mesh_role": "render"
+      },
+      "shape_family": "small_weathered"
+    },
+    {
+      "provider": "polyhaven",
+      "asset_id": "boulder_01",
+      "type": "rock",
+      "source_url": "https://polyhaven.com/a/boulder_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {
+        "container": "blend",
+        "resolution": "1k",
+        "fallback_containers": ["gltf", "fbx"]
+      },
+      "real_scale": {
+        "unit": "meter",
+        "source_unit_meters": 1.0,
+        "expected_longest_dimension_m": [1.0, 2.0],
+        "up_axis_after_import": "Z"
+      },
+      "geometry_convention": {
+        "forward_axis": "-Y",
+        "origin": "preserve_then_recenter_to_bounds",
+        "transforms": "apply_location_rotation_scale",
+        "mesh_role": "render"
+      },
+      "shape_family": "weathered_jagged"
+    },
+    {
+      "provider": "polyhaven",
+      "asset_id": "namaqualand_boulder_03",
+      "type": "rock",
+      "source_url": "https://polyhaven.com/a/namaqualand_boulder_03",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {
+        "container": "blend",
+        "resolution": "1k",
+        "fallback_containers": ["gltf", "fbx"]
+      },
+      "real_scale": {
+        "unit": "meter",
+        "source_unit_meters": 1.0,
+        "expected_longest_dimension_m": [2.0, 3.2],
+        "up_axis_after_import": "Z"
+      },
+      "geometry_convention": {
+        "forward_axis": "-Y",
+        "origin": "preserve_then_recenter_to_bounds",
+        "transforms": "apply_location_rotation_scale",
+        "mesh_role": "render"
+      },
+      "shape_family": "desert_angular"
+    },
+    {
+      "provider": "polyhaven",
+      "asset_id": "namaqualand_boulder_04",
+      "type": "rock",
+      "source_url": "https://polyhaven.com/a/namaqualand_boulder_04",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {
+        "container": "blend",
+        "resolution": "1k",
+        "fallback_containers": ["gltf", "fbx"]
+      },
+      "real_scale": {
+        "unit": "meter",
+        "source_unit_meters": 1.0,
+        "expected_longest_dimension_m": [2.0, 2.7],
+        "up_axis_after_import": "Z"
+      },
+      "geometry_convention": {
+        "forward_axis": "-Y",
+        "origin": "preserve_then_recenter_to_bounds",
+        "transforms": "apply_location_rotation_scale",
+        "mesh_role": "render"
+      },
+      "shape_family": "desert_weathered"
+    }
+  ]
+}

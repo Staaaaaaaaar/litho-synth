@@ -1,0 +1,167 @@
+{
+  "algorithm": "sha256",
+  "assets": {
+    "ambientcg:Ground108": {
+      "asset_id": "Ground108",
+      "cache_path": "ambientcg/Ground108/Ground108_2K-JPG.zip",
+      "dependencies": [],
+      "provider": "ambientcg",
+      "sha256": "ffc003a159613b9c16f0941b66ccce968fa975eeb504bf345f3630f9f7a732f6",
+      "size_bytes": 32548275,
+      "source_url": "https://ambientcg.com/get?file=Ground108_2K-JPG.zip",
+      "type": "surface"
+    },
+    "polyhaven:boulder_01": {
+      "asset_id": "boulder_01",
+      "cache_path": "polyhaven/boulder_01/boulder_01_1k.blend",
+      "dependencies": [
+        {
+          "cache_path": "polyhaven/boulder_01/textures/boulder_01_diff_1k.jpg",
+          "sha256": "c38f0e918f6dc16b8d386ba3cdd89805c78320c119a1ceec85856f82b09a65b8",
+          "size_bytes": 987467,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/boulder_01/boulder_01_diff_1k.jpg"
+        },
+        {
+          "cache_path": "polyhaven/boulder_01/textures/boulder_01_rough_1k.exr",
+          "sha256": "8f70563b37e26abc8c389a9bae8e7d42d8b73758e75e4341e929f25ed732ffd2",
+          "size_bytes": 496072,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/boulder_01/boulder_01_rough_1k.exr"
+        },
+        {
+          "cache_path": "polyhaven/boulder_01/textures/boulder_01_nor_gl_1k.exr",
+          "sha256": "9ed94c347a8ddcb0485e59c47cfd1c6abdfceef937c9a7e9186abd4c32438b2d",
+          "size_bytes": 2421732,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/boulder_01/boulder_01_nor_gl_1k.exr"
+        }
+      ],
+      "provider": "polyhaven",
+      "sha256": "8f8004fb52ebd00c4702a50873ac799e7bd7a0bea3415f2d8bc9986e1c58e371",
+      "size_bytes": 5370351,
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/boulder_01/boulder_01_1k.blend",
+      "type": "rock"
+    },
+    "polyhaven:dense_sand": {
+      "asset_id": "dense_sand",
+      "cache_path": "polyhaven/dense_sand/dense_sand_2k.blend",
+      "dependencies": [
+        {
+          "cache_path": "polyhaven/dense_sand/textures/dense_sand_diff_2k.jpg",
+          "sha256": "b2e3f157c315b9645d23e55d54b4c2c8fec39e5114001cbbc9a797ed27a06980",
+          "size_bytes": 2803876,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dense_sand/dense_sand_diff_2k.jpg"
+        },
+        {
+          "cache_path": "polyhaven/dense_sand/textures/dense_sand_disp_2k.png",
+          "sha256": "4e520fa3163723e2e0bfbd4cb1897a1323202fe9111910986ceeca1f1cea198e",
+          "size_bytes": 6180715,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/dense_sand/dense_sand_disp_2k.png"
+        },
+        {
+          "cache_path": "polyhaven/dense_sand/textures/dense_sand_nor_gl_2k.exr",
+          "sha256": "c7def270434572e319c92f1e7db963d956f2a07c8213cb1824162295af4cde51",
+          "size_bytes": 8352163,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/dense_sand/dense_sand_nor_gl_2k.exr"
+        },
+        {
+          "cache_path": "polyhaven/dense_sand/textures/dense_sand_rough_2k.exr",
+          "sha256": "9fe8fb37b26c9794545322bdcbf684bf777f29729d9813d781f686c6261828da",
+          "size_bytes": 1817636,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/exr/2k/dense_sand/dense_sand_rough_2k.exr"
+        }
+      ],
+      "provider": "polyhaven",
+      "sha256": "b46d1176669455af5a627b0ab7f3b92de5c3af7ef3a4e3ca995cf52d5f9baf1d",
+      "size_bytes": 211039,
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Textures/blend/2k/dense_sand/dense_sand_2k.blend",
+      "type": "surface"
+    },
+    "polyhaven:namaqualand_boulder_03": {
+      "asset_id": "namaqualand_boulder_03",
+      "cache_path": "polyhaven/namaqualand_boulder_03/namaqualand_boulder_03_1k.blend",
+      "dependencies": [
+        {
+          "cache_path": "polyhaven/namaqualand_boulder_03/textures/namaqualand_boulder_03_diff_1k.jpg",
+          "sha256": "cd1a44c22932eb18a5989474f60bdccd622a1fdb0854fd69899a32ab8efe3bd4",
+          "size_bytes": 867015,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/namaqualand_boulder_03/namaqualand_boulder_03_diff_1k.jpg"
+        },
+        {
+          "cache_path": "polyhaven/namaqualand_boulder_03/textures/namaqualand_boulder_03_nor_gl_1k.exr",
+          "sha256": "ef660429f5dc648f6edea22d55b512fb1680a11463d723eb000c0dea02a12c7f",
+          "size_bytes": 1802848,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/namaqualand_boulder_03/namaqualand_boulder_03_nor_gl_1k.exr"
+        },
+        {
+          "cache_path": "polyhaven/namaqualand_boulder_03/textures/namaqualand_boulder_03_rough_1k.exr",
+          "sha256": "2bc586cb9480b3f9f9d09f1add70a42366c6c4850318df8b7d9728a4f2a29191",
+          "size_bytes": 524022,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/namaqualand_boulder_03/namaqualand_boulder_03_rough_1k.exr"
+        }
+      ],
+      "provider": "polyhaven",
+      "sha256": "43e8e12ebbd694b73b1c8ffd2ca75983f7b5c8f41672792d98a7cfde328f5e66",
+      "size_bytes": 4213652,
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/namaqualand_boulder_03/namaqualand_boulder_03_1k.blend",
+      "type": "rock"
+    },
+    "polyhaven:namaqualand_boulder_04": {
+      "asset_id": "namaqualand_boulder_04",
+      "cache_path": "polyhaven/namaqualand_boulder_04/namaqualand_boulder_04_1k.blend",
+      "dependencies": [
+        {
+          "cache_path": "polyhaven/namaqualand_boulder_04/textures/namaqualand_boulder_04_diff_1k.jpg",
+          "sha256": "1673e031ebcf5015206fec10bec676e55b049705b01fcef6bb2b2fb79e8de54c",
+          "size_bytes": 886013,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/namaqualand_boulder_04/namaqualand_boulder_04_diff_1k.jpg"
+        },
+        {
+          "cache_path": "polyhaven/namaqualand_boulder_04/textures/namaqualand_boulder_04_nor_gl_1k.exr",
+          "sha256": "2ee20939c6040c460951836f16845eca44d47a3a88eeaa79ed4ee460ffb1fcab",
+          "size_bytes": 1895531,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/namaqualand_boulder_04/namaqualand_boulder_04_nor_gl_1k.exr"
+        },
+        {
+          "cache_path": "polyhaven/namaqualand_boulder_04/textures/namaqualand_boulder_04_rough_1k.exr",
+          "sha256": "a1a846b5ef1f87bb18ab66c07e526d2e679e2a916e72443b0c65dfc3f11e557e",
+          "size_bytes": 474407,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/namaqualand_boulder_04/namaqualand_boulder_04_rough_1k.exr"
+        }
+      ],
+      "provider": "polyhaven",
+      "sha256": "3addff90952d84a3378a486bdebbe49b02c58014095cb4b4b542d1a8b27cb333",
+      "size_bytes": 3802673,
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/namaqualand_boulder_04/namaqualand_boulder_04_1k.blend",
+      "type": "rock"
+    },
+    "polyhaven:rock_09": {
+      "asset_id": "rock_09",
+      "cache_path": "polyhaven/rock_09/rock_09_1k.blend",
+      "dependencies": [
+        {
+          "cache_path": "polyhaven/rock_09/textures/rock_09_rough_1k.exr",
+          "sha256": "78c12f545eac71000b7fc5312d3bde097074ddad43a0e756fc23101b413cb076",
+          "size_bytes": 482286,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/rock_09/rock_09_rough_1k.exr"
+        },
+        {
+          "cache_path": "polyhaven/rock_09/textures/rock_09_diff_1k.jpg",
+          "sha256": "afb7ae5ae82238d304aba589391ac6bc87f7cf1dbfe50980c21f762cfdd87efd",
+          "size_bytes": 595103,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/rock_09/rock_09_diff_1k.jpg"
+        },
+        {
+          "cache_path": "polyhaven/rock_09/textures/rock_09_nor_gl_1k.exr",
+          "sha256": "a3cf215096742c692651643115dc4c9cb0befcb4d32a7b0ff70d20e3f25397ae",
+          "size_bytes": 1610857,
+          "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/rock_09/rock_09_nor_gl_1k.exr"
+        }
+      ],
+      "provider": "polyhaven",
+      "sha256": "bdd2db419cfa278c4f549a045126580cd0ae45e5245157bc3a849262164e5321",
+      "size_bytes": 841923,
+      "source_url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/rock_09/rock_09_1k.blend",
+      "type": "rock"
+    }
+  },
+  "schema_version": 1
+}

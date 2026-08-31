@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "asset_type": "surface",
+  "assets": [
+    {
+      "provider": "ambientcg",
+      "asset_id": "Ground108",
+      "type": "surface",
+      "source_url": "https://ambientcg.com/get?file=Ground108_2K-JPG.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://docs.ambientcg.com/license/",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {"container": "zip", "resolution": "2k", "encoding": "JPG"},
+      "real_scale": {"unit": "meter", "tile_size_m": [1.0, 1.0], "scale_source": "provider_metadata"},
+      "texture_convention": {
+        "workflow": "metallic_roughness",
+        "color_space": {"basecolor": "sRGB", "normal": "Non-Color", "roughness": "Non-Color", "displacement": "Non-Color", "ambient_occlusion": "Non-Color"},
+        "normal_map": "OpenGL",
+        "channel_aliases": {"basecolor": ["Color"], "normal": ["NormalGL"], "roughness": ["Roughness"], "displacement": ["Displacement"], "ambient_occlusion": ["AmbientOcclusion"]}
+      }
+    },
+    {
+      "provider": "ambientcg",
+      "asset_id": "Ground109",
+      "type": "surface",
+      "source_url": "https://ambientcg.com/get?file=Ground109_2K-JPG.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://docs.ambientcg.com/license/",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {"container": "zip", "resolution": "2k", "encoding": "JPG"},
+      "real_scale": {"unit": "meter", "tile_size_m": [1.0, 1.0], "scale_source": "provider_metadata"},
+      "texture_convention": {
+        "workflow": "metallic_roughness",
+        "color_space": {"basecolor": "sRGB", "normal": "Non-Color", "roughness": "Non-Color", "displacement": "Non-Color", "ambient_occlusion": "Non-Color"},
+        "normal_map": "OpenGL",
+        "channel_aliases": {"basecolor": ["Color"], "normal": ["NormalGL"], "roughness": ["Roughness"], "displacement": ["Displacement"], "ambient_occlusion": ["AmbientOcclusion"]}
+      }
+    },
+    {
+      "provider": "ambientcg",
+      "asset_id": "Ground110",
+      "type": "surface",
+      "source_url": "https://ambientcg.com/get?file=Ground110_2K-JPG.zip",
+      "license": "CC0-1.0",
+      "license_url": "https://docs.ambientcg.com/license/",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {"container": "zip", "resolution": "2k", "encoding": "JPG"},
+      "real_scale": {"unit": "meter", "tile_size_m": [1.0, 1.0], "scale_source": "provider_metadata"},
+      "texture_convention": {
+        "workflow": "metallic_roughness",
+        "color_space": {"basecolor": "sRGB", "normal": "Non-Color", "roughness": "Non-Color", "displacement": "Non-Color", "ambient_occlusion": "Non-Color"},
+        "normal_map": "OpenGL",
+        "channel_aliases": {"basecolor": ["Color"], "normal": ["NormalGL"], "roughness": ["Roughness"], "displacement": ["Displacement"], "ambient_occlusion": ["AmbientOcclusion"]}
+      }
+    },
+    {
+      "provider": "polyhaven",
+      "asset_id": "rock_ground",
+      "type": "surface",
+      "source_url": "https://polyhaven.com/a/rock_ground",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {"container": "blend", "resolution": "2k", "fallback_containers": ["gltf"]},
+      "real_scale": {"unit": "meter", "tile_size_m": [2.0, 2.0], "scale_source": "provider_metadata"},
+      "texture_convention": {
+        "workflow": "metallic_roughness",
+        "color_space": {"basecolor": "sRGB", "normal": "Non-Color", "roughness": "Non-Color", "displacement": "Non-Color"},
+        "normal_map": "OpenGL",
+        "channel_aliases": {"basecolor": ["diff"], "normal": ["nor_gl"], "roughness": ["rough"], "displacement": ["disp"]}
+      }
+    },
+    {
+      "provider": "polyhaven",
+      "asset_id": "gravel_ground_01",
+      "type": "surface",
+      "source_url": "https://polyhaven.com/a/gravel_ground_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {"container": "blend", "resolution": "2k", "fallback_containers": ["gltf"]},
+      "real_scale": {"unit": "meter", "tile_size_m": [2.0, 2.0], "scale_source": "provider_metadata"},
+      "texture_convention": {
+        "workflow": "metallic_roughness",
+        "color_space": {"basecolor": "sRGB", "normal": "Non-Color", "roughness": "Non-Color", "displacement": "Non-Color"},
+        "normal_map": "OpenGL",
+        "channel_aliases": {"basecolor": ["diff"], "normal": ["nor_gl"], "roughness": ["rough"], "displacement": ["disp"]}
+      }
+    },
+    {
+      "provider": "polyhaven",
+      "asset_id": "dense_sand",
+      "type": "surface",
+      "source_url": "https://polyhaven.com/a/dense_sand",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "redistribution": "Allowed under CC0; retain provenance and this manifest.",
+      "preferred_format": {"container": "blend", "resolution": "2k", "fallback_containers": ["gltf"]},
+      "real_scale": {"unit": "meter", "tile_size_m": [2.0, 2.0], "scale_source": "provider_metadata"},
+      "texture_convention": {
+        "workflow": "metallic_roughness",
+        "color_space": {"basecolor": "sRGB", "normal": "Non-Color", "roughness": "Non-Color", "displacement": "Non-Color"},
+        "normal_map": "OpenGL",
+        "channel_aliases": {"basecolor": ["diff"], "normal": ["nor_gl"], "roughness": ["rough"], "displacement": ["disp"]}
+      }
+    }
+  ]
+}
