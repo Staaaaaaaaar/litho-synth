@@ -1,13 +1,26 @@
 import json
+from hashlib import sha256
 
 import h5py
 import numpy as np
 import pytest
 
-from lithosynth.inspection import OutputValidationError, load_and_validate_output, save_inspection_figure
+from lithosynth.inspection import (
+    OutputValidationError,
+    load_and_validate_output,
+    save_inspection_figure,
+    validate_all_outputs,
+)
 
 
-def _write_output(tmp_path, *, rock_id: int = 1, include_depth: bool = True) -> None:
+def _write_output(
+    tmp_path,
+    *,
+    rock_id: int = 1,
+    include_depth: bool = True,
+    modern: bool = False,
+    background_fraction: float = 0.0,
+) -> None:
     metadata = {
         "terrain": {"size": 4.0},
         "rocks": [
@@ -15,12 +28,34 @@ def _write_output(tmp_path, *, rock_id: int = 1, include_depth: bool = True) -> 
                 "rock_id": 1,
                 "location": [0.0, 0.0, 0.5],
                 "dimensions": [1.0, 1.0, 1.0],
+                "surface_area": 3.14,
+                "volume": 0.52,
                 "base_color": [0.3, 0.3, 0.3, 1.0],
                 "roughness": 0.8,
             }
         ],
         "camera": {"resolution": [4, 3]},
     }
+    if modern:
+        metadata.pop("camera")
+        heights = np.zeros((3, 3), dtype=np.float64)
+        payload = ",".join(f"{float(value):.9g}" for value in heights.flat)
+        np.save(tmp_path / "terrain_height.npy", heights)
+        metadata["format_version"] = "0.1.1"
+        metadata["terrain"]["height_field"] = {
+            "resolution": 3,
+            "sha256": sha256(payload.encode()).hexdigest(),
+        }
+        metadata["terrain_height_file"] = "terrain_height.npy"
+        metadata["frames"] = [
+            {
+                "frame_index": 0,
+                "camera_id": "camera_000",
+                "camera": {"resolution": [4, 3], "max_background_fraction": 0.01},
+                "background_fraction": background_fraction,
+                "visible_rocks": [{"rock_id": rock_id}],
+            }
+        ]
     (tmp_path / "scene_metadata.json").write_text(json.dumps(metadata), encoding="utf-8")
 
     with h5py.File(tmp_path / "0.hdf5", "w") as output_file:
@@ -55,3 +90,19 @@ def test_unknown_segmented_rock_id_is_rejected(tmp_path) -> None:
 
     with pytest.raises(OutputValidationError, match="unknown rock IDs"):
         load_and_validate_output(tmp_path)
+
+
+def test_all_declared_frames_are_validated(tmp_path) -> None:
+    _write_output(tmp_path, modern=True)
+
+    frames = validate_all_outputs(tmp_path)
+
+    assert len(frames) == 1
+    assert frames[0].frame_metadata["camera_id"] == "camera_000"
+
+
+def test_excessive_background_is_rejected(tmp_path) -> None:
+    _write_output(tmp_path, modern=True, background_fraction=0.02)
+
+    with pytest.raises(OutputValidationError, match="background fraction"):
+        validate_all_outputs(tmp_path)
