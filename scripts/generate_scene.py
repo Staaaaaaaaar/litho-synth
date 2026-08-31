@@ -23,7 +23,9 @@ from lithosynth.generators import generate_scene
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate a minimal LithoSynth multi-rock scene.")
+    parser = argparse.ArgumentParser(
+        description="Generate a calibrated LithoSynth v0.1.1 scanned-rock scene."
+    )
     parser.add_argument("--config", type=Path, default=REPOSITORY_ROOT / "configs" / "scene.json")
     parser.add_argument("--output", type=Path, help="Override render.output_dir from the configuration")
     parser.add_argument("--seed", type=int, help="Override the configured random seed")

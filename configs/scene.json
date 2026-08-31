@@ -1,35 +1,91 @@
 {
   "seed": 7,
   "terrain": {
-    "kind": "flat",
-    "size": 16.0,
+    "kind": "heightfield",
+    "size": 40.0,
+    "resolution": 193,
     "base_height": 0.0,
-    "gray_range": [0.16, 0.2],
-    "roughness_range": [0.9, 1.0]
+    "height_amplitude": 0.9,
+    "octaves": 5,
+    "persistence": 0.52,
+    "ridge_strength": 0.22,
+    "slope": [0.18, -0.08],
+    "erosion_iterations": 8,
+    "talus": 0.12,
+    "erosion_rate": 0.18,
+    "gray_range": [0.42, 0.58],
+    "roughness_range": [0.72, 0.9],
+    "material": {
+      "material_id": "dense_sand",
+      "tile_size_m": 2.0,
+      "prepared_metadata": "assets/prepared/polyhaven/dense_sand/metadata.json"
+    }
   },
   "rocks": {
-    "count": 12,
-    "placement_radius": 4.5,
-    "minimum_gap": 0.25,
-    "horizontal_scale_range": [0.3, 0.75],
-    "vertical_scale_range": [0.25, 0.65],
-    "gray_range": [0.16, 0.42],
-    "roughness_range": [0.65, 0.95]
+    "count": 28,
+    "placement_radius": 9.0,
+    "minimum_gap": 0.12,
+    "support_samples": 5,
+    "diameter_range": [0.18, 1.4],
+    "gray_range": [0.16, 0.46],
+    "roughness_range": [0.68, 0.96],
+    "bury_fraction_range": [0.0, 0.0],
+    "clustering": 0.58,
+    "drop_height": 0.08,
+    "asset_manifest": "assets/manifests/rocks.json"
   },
-  "camera": {
-    "location": [0.0, -11.0, 8.0],
-    "look_at": [0.0, 0.0, 0.4],
-    "resolution": [640, 480]
+  "camera_rig": {
+    "rig_id": "local_overhead",
+    "resolution": [640, 480],
+    "intrinsics": {
+      "fx": 540.0,
+      "fy": 540.0,
+      "cx": 320.0,
+      "cy": 240.0
+    },
+    "clip_start": 0.08,
+    "clip_end": 20.0,
+    "edge_margin": 6.0,
+    "max_background_fraction": 0.002,
+    "poses": [
+      {"camera_id": "local_sw_000", "position_xy": [-6.9, -6.9], "height": 7.5, "target_xy": [-6.0, -6.0], "target_height": 0.05},
+      {"camera_id": "local_s_001", "position_xy": [-0.9, -6.9], "height": 7.5, "target_xy": [0.0, -6.0], "target_height": 0.05},
+      {"camera_id": "local_se_002", "position_xy": [5.1, -6.9], "height": 7.5, "target_xy": [6.0, -6.0], "target_height": 0.05},
+      {"camera_id": "local_w_003", "position_xy": [-6.9, -0.9], "height": 7.5, "target_xy": [-6.0, 0.0], "target_height": 0.05},
+      {"camera_id": "local_center_004", "position_xy": [-0.9, -0.9], "height": 7.0, "target_xy": [0.0, 0.0], "target_height": 0.05},
+      {"camera_id": "local_e_005", "position_xy": [5.1, -0.9], "height": 7.5, "target_xy": [6.0, 0.0], "target_height": 0.05},
+      {"camera_id": "local_nw_006", "position_xy": [-6.9, 5.1], "height": 7.5, "target_xy": [-6.0, 6.0], "target_height": 0.05},
+      {"camera_id": "local_n_007", "position_xy": [-0.9, 5.1], "height": 7.5, "target_xy": [0.0, 6.0], "target_height": 0.05},
+      {"camera_id": "local_ne_008", "position_xy": [5.1, 5.1], "height": 7.5, "target_xy": [6.0, 6.0], "target_height": 0.05}
+    ]
   },
   "light": {
     "type": "SUN",
     "rotation_euler": [0.6, -0.5, -0.4],
-    "energy": 3.0,
-    "color": [1.0, 0.93, 0.82]
+    "energy": 2.4,
+    "color": [1.0, 0.94, 0.84],
+    "sun_angle": 0.08,
+    "world": {
+      "strength": 0.35,
+      "sun_elevation": 0.65,
+      "sun_rotation": 2.4,
+      "altitude": 0.0,
+      "air_density": 1.0,
+      "dust_density": 1.8
+    }
   },
   "render": {
-    "samples": 64,
-    "noise_threshold": 0.05,
+    "samples": 128,
+    "noise_threshold": 0.025,
+    "physics": true,
+    "physics_min_time": 2.0,
+    "physics_max_time": 15.0,
+    "physics_substeps": 12,
+    "physics_solver_iterations": 30,
+    "max_terrain_penetration": 0.003,
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": -0.15,
     "output_dir": "output/demo"
   }
 }

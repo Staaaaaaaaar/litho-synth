@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lithosynth"
-version = "0.1.0"
-description = "Synthetic scene, dataset, and diversity analysis tools for multi-rock research."
+version = "0.1.1"
+description = "Controllable and reproducible synthetic rock scene generation with BlenderProc."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -26,6 +26,7 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src", "."]
 
 [tool.ruff]
 line-length = 120
