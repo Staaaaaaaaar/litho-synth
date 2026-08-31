@@ -1,3 +1,4 @@
 # 文档
 
-- [LithoSynth v0.1.0 Plan](plan/v0.1.0.md)
+- [场景资产](assets.md)
+- [输出数据约定](output-schema.md)
