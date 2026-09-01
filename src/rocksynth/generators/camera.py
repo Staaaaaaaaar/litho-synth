@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from lithosynth.core.spec import CameraRigSpec, CameraSpec, TerrainSpec
+from rocksynth.core.spec import CameraRigSpec, CameraSpec, TerrainSpec
 
 
 def generate_camera_rig(config: dict[str, Any], terrain: TerrainSpec) -> CameraRigSpec:

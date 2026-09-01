@@ -31,7 +31,7 @@ REQUIRED_FIELDS = {
     "real_scale",
 }
 SUPPORTED_PROVIDERS = {"polyhaven", "ambientcg"}
-USER_AGENT = "lithosynth-asset-pipeline/0.1.1"
+USER_AGENT = "rock-synth-asset-pipeline/0.1.1"
 
 
 class AssetError(RuntimeError):

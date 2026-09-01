@@ -1,12 +1,12 @@
-# LithoSynth
+# RockSynth
 
-LithoSynth 使用 BlenderProc 生成可控、可复现的岩石场景，可输出多机位 RGB、深度、实例分割等数据。
+RockSynth 使用 BlenderProc 生成可控、可复现的岩石场景，可输出多机位 RGB、深度、实例分割等数据。
 
 ## 环境配置
 
 ```bash
 conda env create -f environment.yml
-conda activate lithosynth
+conda activate rock-synth
 blenderproc quickstart
 ```
 

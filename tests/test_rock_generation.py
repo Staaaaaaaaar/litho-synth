@@ -2,8 +2,8 @@ from math import cos, hypot, sin
 
 import pytest
 
-from lithosynth.core.config import load_scene_config
-from lithosynth.generators import generate_scene
+from rocksynth.core.config import load_scene_config
+from rocksynth.generators import generate_scene
 
 
 def test_sampling_is_reproducible(asset_scene_config) -> None:

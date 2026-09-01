@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from lithosynth.core.config import ConfigError, load_scene_config
+from rocksynth.core.config import ConfigError, load_scene_config
 
 
 def test_default_scene_config_is_valid() -> None:

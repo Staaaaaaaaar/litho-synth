@@ -5,10 +5,10 @@ from __future__ import annotations
 from random import Random
 from typing import Any
 
-from lithosynth.core.spec import SceneSpec
-from lithosynth.generators.camera import generate_camera_rig
-from lithosynth.generators.rock import generate_rocks
-from lithosynth.generators.terrain import generate_terrain
+from rocksynth.core.spec import SceneSpec
+from rocksynth.generators.camera import generate_camera_rig
+from rocksynth.generators.rock import generate_rocks
+from rocksynth.generators.terrain import generate_terrain
 
 
 def generate_scene(config: dict[str, Any]) -> SceneSpec:

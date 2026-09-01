@@ -5,11 +5,11 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPOSITORY_ROOT / "src"))
 
-from lithosynth.inspection import load_and_validate_output, save_inspection_figure, validate_all_outputs
+from rocksynth.inspection import load_and_validate_output, save_inspection_figure, validate_all_outputs
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Validate and visualize one LithoSynth scene output.")
+    parser = argparse.ArgumentParser(description="Validate and visualize one RockSynth scene output.")
     parser.add_argument("output_dir", type=Path, nargs="?", default=REPOSITORY_ROOT / "output" / "demo")
     parser.add_argument("--frame", type=int, default=0, help="HDF5 frame index to inspect")
     parser.add_argument("--all", action="store_true", help="Validate and save an inspection image for every frame")

@@ -1,4 +1,4 @@
-name: lithosynth
+name: rock-synth
 
 channels:
   - conda-forge

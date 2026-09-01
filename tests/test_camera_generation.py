@@ -1,4 +1,4 @@
-from lithosynth.generators import generate_scene
+from rocksynth.generators import generate_scene
 
 
 def test_camera_rig_is_calibrated_and_reproducible(asset_scene_config) -> None:

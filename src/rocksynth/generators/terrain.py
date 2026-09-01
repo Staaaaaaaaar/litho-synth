@@ -9,7 +9,7 @@ from typing import Any
 
 import numpy as np
 
-from lithosynth.core.spec import HeightFieldSpec, MaterialSpec, TerrainSpec
+from rocksynth.core.spec import HeightFieldSpec, MaterialSpec, TerrainSpec
 
 
 def generate_terrain(config: dict[str, Any], seed: int) -> TerrainSpec:

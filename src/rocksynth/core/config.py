@@ -1,4 +1,4 @@
-"""Configuration loading and validation for LithoSynth scenes."""
+"""Configuration loading and validation for RockSynth scenes."""
 
 from __future__ import annotations
 

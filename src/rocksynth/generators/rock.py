@@ -9,8 +9,8 @@ from pathlib import Path
 from random import Random
 from typing import Any
 
-from lithosynth.core.spec import RockAssetSpec, RockSpec, TerrainSpec
-from lithosynth.generators.placement import sample_non_overlapping_positions
+from rocksynth.core.spec import RockAssetSpec, RockSpec, TerrainSpec
+from rocksynth.generators.placement import sample_non_overlapping_positions
 
 
 @dataclass(frozen=True)

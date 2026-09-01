@@ -1,7 +1,7 @@
 """Shared configuration and scene contracts."""
 
-from lithosynth.core.config import ConfigError, load_scene_config
-from lithosynth.core.spec import (
+from rocksynth.core.config import ConfigError, load_scene_config
+from rocksynth.core.spec import (
     CameraRigSpec,
     CameraSpec,
     HeightFieldSpec,

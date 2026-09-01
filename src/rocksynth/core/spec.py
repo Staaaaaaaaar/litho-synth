@@ -1,4 +1,4 @@
-"""Backend-neutral scene descriptions produced by LithoSynth generators."""
+"""Backend-neutral scene descriptions produced by RockSynth generators."""
 
 from __future__ import annotations
 

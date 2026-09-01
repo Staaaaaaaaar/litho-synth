@@ -128,7 +128,7 @@ def save_inspection_figure(
     visible_ids = set(np.unique(data.rock_id_segmap).tolist()).difference({0})
     camera_id = data.frame_metadata.get("camera_id", "legacy_camera")
     figure.suptitle(
-        f"LithoSynth output inspection — {camera_id}, {len(rocks)} rocks, {len(visible_ids)} visible",
+        f"RockSynth output inspection — {camera_id}, {len(rocks)} rocks, {len(visible_ids)} visible",
         fontsize=15,
     )
     figure.savefig(destination_path, dpi=150)

@@ -6,7 +6,7 @@ from typing import Any
 
 import pytest
 
-from lithosynth.core.config import load_scene_config
+from rocksynth.core.config import load_scene_config
 
 
 @pytest.fixture

@@ -1,4 +1,4 @@
-"""BlenderProc implementation of the LithoSynth minimal scene."""
+"""BlenderProc implementation of the RockSynth scene."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from typing import Any
 
 import numpy as np
 
-from lithosynth.core.spec import CameraSpec, MaterialSpec, RockSpec, SceneSpec, TerrainSpec
+from rocksynth.core.spec import CameraSpec, MaterialSpec, RockSpec, SceneSpec, TerrainSpec
 
 
 def render_scene(bproc: Any, config: dict[str, Any], scene: SceneSpec, output_dir: Path) -> None:
@@ -381,7 +381,7 @@ def _configure_lighting(bproc: Any, config: dict[str, Any], render_config: dict[
     light.set_color(config["color"])
     light.blender_obj.data.angle = float(config["sun_angle"])
 
-    world = bpy.context.scene.world or bpy.data.worlds.new("LithoSynth World")
+    world = bpy.context.scene.world or bpy.data.worlds.new("RockSynth World")
     bpy.context.scene.world = world
     world.use_nodes = True
     nodes = world.node_tree.nodes

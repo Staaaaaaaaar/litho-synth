@@ -27,9 +27,9 @@ def test_lock_schema_and_sha256_round_trip(tmp_path: Path) -> None:
     assert repository_lock["algorithm"] == "sha256"
 
     payload = tmp_path / "sample.bin"
-    payload.write_bytes(b"lithosynth asset fixture\n")
+    payload.write_bytes(b"rocksynth asset fixture\n")
     digest = download_assets.sha256_file(payload)
-    assert digest == "303bbaf480522822eb0ac4cf6ead7cb6dc6073f95150d1795d534be3fe0f65dd"
+    assert digest == "2adf1e882e80b50109a0916372a1cc82ddadf3527109e9247ea29c3adf6445a9"
 
     path = tmp_path / "manifest.lock.json"
     lock = {

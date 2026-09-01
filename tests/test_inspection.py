@@ -5,7 +5,7 @@ import h5py
 import numpy as np
 import pytest
 
-from lithosynth.inspection import (
+from rocksynth.inspection import (
     OutputValidationError,
     load_and_validate_output,
     save_inspection_figure,

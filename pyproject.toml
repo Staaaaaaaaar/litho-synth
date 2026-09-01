@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lithosynth"
+name = "rock-synth"
 version = "0.1.1"
 description = "Controllable and reproducible synthetic rock scene generation with BlenderProc."
 readme = "README.md"
